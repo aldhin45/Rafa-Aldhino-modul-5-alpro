@@ -2,16 +2,16 @@ package main
 
 import "fmt"
 
-func printStars(n int) {
+func printbintang(n int) {
 	if n > 0 {
 		fmt.Print("*")
-		printStars(n - 1)
+		printbintang(n - 1)
 	}
 }
 
 func printPattern(n, current int) {
 	if current <= n {
-		printStars(current)
+		printbintang(current)
 		fmt.Println()
 		printPattern(n, current+1)
 	}
