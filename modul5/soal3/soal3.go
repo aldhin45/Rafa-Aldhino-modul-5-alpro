@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-func findFactors(n, i int) {
+func faktor(n, i int) {
 	if i > n {
 		return
 	}
 	if n%i == 0 {
 		fmt.Print(i, " ")
 	}
-	findFactors(n, i+1)
+	faktor(n, i+1)
 }
 
 func main() {
@@ -18,6 +18,6 @@ func main() {
 	fmt.Scan(&n)
 
 	fmt.Print("Faktor dari ", n, ": ")
-	findFactors(n, 1)
+	faktor(n, 1)
 	fmt.Println()
 }
