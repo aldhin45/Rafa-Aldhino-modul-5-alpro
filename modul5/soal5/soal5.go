@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func printOdd(n, current int) {
+func cetakbilangan(n, current int) {
 	if current > n {
 		return
 	}
@@ -13,7 +13,7 @@ func printOdd(n, current int) {
 		fmt.Print(current, " ")
 	}
 
-	printOdd(n, current+1)
+	cetakbilangan(n, current+1)
 }
 
 func main() {
@@ -21,6 +21,6 @@ func main() {
 	fmt.Print("Masukkan angka: ")
 	fmt.Scan(&N)
 
-	printOdd(N, 1)
+	cetakbilangan(N, 1)
 	fmt.Println()
 }
